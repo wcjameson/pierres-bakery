@@ -29,6 +29,10 @@ namespace Bakery.Models
       {
         return ((numberOfPastries / 3) * 5);
       }
+      else if (numberOfPastries % 3 == 1)
+      {
+        return (((numberOfPastries * 5) + 1) / 3);
+      }
       else
       {
         return numberOfPastries;
