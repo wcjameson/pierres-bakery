@@ -12,7 +12,12 @@ namespace Bakery.Tests
     Pastry newPastry = new Pastry("3");
     Assert.AreEqual(typeof(Pastry), newPastry.GetType());
     }
-    
+    [TestMethod]
+    public void CalculatePastryPrice_ConvertsStringToInteger_Integer()
+    {
+      Pastry testPastry = new Pastry("10");
+      Assert.AreEqual(10, testPastry.Price);
+    }
   
   }
 }
