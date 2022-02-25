@@ -17,7 +17,7 @@ namespace Bakery.Models
     {
       int numberOfPastries = int.Parse(pastryAmount);
       // return numberOfPastries;
-      if (numberOfPastries == 1 || numberOfPastries ==2)
+      if (numberOfPastries == 1 || numberOfPastries == 2)
       {
         return numberOfPastries * 2;
       }
