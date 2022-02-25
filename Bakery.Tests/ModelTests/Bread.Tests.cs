@@ -19,5 +19,11 @@ namespace Bakery.Tests
       Bread newBread = new Bread("3");
       Assert.AreEqual(3, newBread.Price);
     }
+    [TestMethod]
+    public void CalculateBreadPrice_TallyBreadPrice_BreadPrice()
+    {
+      Bread newLoaf = new Bread("6");
+      Assert.AreEqual(20, newLoaf.Price);
+    }
   }
 }
