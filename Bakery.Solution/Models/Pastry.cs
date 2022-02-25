@@ -10,16 +10,20 @@ namespace Bakery.Models
     public Pastry(string pastryAmount)
     {
       PastryAmount = pastryAmount;
-      Price = CalculatePastryPrice(PastryAmount);
+      Price = CalculatePastryPrice(pastryAmount);
     }
 
     private int CalculatePastryPrice(string pastryAmount)
     {
       int numberOfPastries = int.Parse(pastryAmount);
       // return numberOfPastries;
-      if (pastryAmount == 1 || pastryAmount ==2)
+      if (numberOfPastries == 1 || numberOfPastries ==2)
       {
-        return pastryAmount * 2;
+        return numberOfPastries * 2;
+      }
+      else
+      {
+        return numberOfPastries;
       }
     }
   }
