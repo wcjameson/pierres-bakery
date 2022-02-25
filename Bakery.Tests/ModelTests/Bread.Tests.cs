@@ -9,8 +9,15 @@ namespace Bakery.Tests
     [TestMethod]
     public void BreadConstructor_InstantiatesBread_BreadObject()
     {
-      Bread testBread = new Bread();
+      Bread testBread = new Bread("test");
       Assert.AreEqual(typeof(Bread), testBread.GetType());
+    }
+    [TestMethod]
+    public void CalculateBreadPrice_ConvertStringToInt_Price()
+    {
+      
+      Bread newBread = new Bread("3");
+      Assert.AreEqual(3, newBread.BreadAmount);
     }
   }
 }
