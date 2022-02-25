@@ -15,8 +15,14 @@ namespace Bakery.Tests
     [TestMethod]
     public void CalculatePastryPrice_ConvertsStringToInteger_Integer()
     {
-      Pastry testPastry = new Pastry("10");
-      Assert.AreEqual(10, testPastry.Price);
+      Pastry testPastry = new Pastry("5");
+      Assert.AreEqual(5, testPastry.Price);
+    }
+    [TestMethod]
+    public void CalculatePastryPrice_TallyPastryPriceIfPastriesAmountIsOneOrTwo_PastryPrice()
+    {
+      Pastry bakedPastry = new Pastry("2");
+      Assert.AreEqual(4, bakedPastry.Price);
     }
   
   }
