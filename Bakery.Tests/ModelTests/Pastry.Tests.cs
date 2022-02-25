@@ -36,6 +36,12 @@ namespace Bakery.Tests
       Pastry morePastry = new Pastry("4");
       Assert.AreEqual(7, morePastry.Price);
     }
+    [TestMethod]
+    public void CalculatePastryPrice_TallyPriceIfRemainderIs2_PastryPrice()
+    {
+      Pastry lastPastry = new Pastry("5");
+      Assert.AreEqual(9, lastPastry.Price);
+    }
   
   }
 }
