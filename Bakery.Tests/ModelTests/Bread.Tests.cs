@@ -16,8 +16,8 @@ namespace Bakery.Tests
     public void CalculateBreadPrice_ConvertStringToIntTallyBreadPrice_Price()
     {
       
-      Bread newBread = new Bread("3");
-      Assert.AreEqual(10, newBread.Price);
+      Bread newBread = new Bread("0");
+      Assert.AreEqual(0, newBread.Price);
     }
     [TestMethod]
     public void CalculateBreadPrice_TallyBreadPriceIfRemainder1_BreadPrice()
