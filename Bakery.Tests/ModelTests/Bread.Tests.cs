@@ -13,7 +13,7 @@ namespace Bakery.Tests
       Assert.AreEqual(typeof(Bread), testBread.GetType());
     }
     [TestMethod]
-    public void CalculateBreadPrice_ConvertStringToInt_Price()
+    public void CalculateBreadPrice_ConvertStringToIntTallyBreadPrice_Price()
     {
       
       Bread newBread = new Bread("3");
