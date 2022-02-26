@@ -16,7 +16,6 @@ namespace Bakery.Models
     private int CalculatePastryPrice(string pastryAmount)
     {
       int numberOfPastries = int.Parse(pastryAmount);
-      // return numberOfPastries;
       if (numberOfPastries == 1 || numberOfPastries == 2)
       {
         return numberOfPastries * 2;
