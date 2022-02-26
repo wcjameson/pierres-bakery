@@ -16,7 +16,6 @@ namespace Bakery.Models
     private int CalculateBreadPrice(string breadAmount)
     {
       int numberOfLoafs = int.Parse(breadAmount);
-      // return numberOfLoafs;
       if (numberOfLoafs == 1)
       {
         return 5;
@@ -27,7 +26,7 @@ namespace Bakery.Models
       }
       else if (numberOfLoafs % 3 == 0)
       {
-        int discountedLoafs = numberOfLoafs / 3; 
+        int discountedLoafs = numberOfLoafs / 3;
         return (numberOfLoafs - discountedLoafs) * 5;
       }
       else if (numberOfLoafs % 3 == 1)

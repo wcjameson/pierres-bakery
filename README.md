@@ -11,7 +11,7 @@
 
 ## Description
 
-This is a console app written in C# that allows the user to input the amount of loafs of bread they will purchase, as well as the amount of pastries they will purchase.  The program will take the user's order and return the total cost.  This total cost will vary depending on the amount of bread loafs or pastries ordered, due to the deals that the bakery is offering!
+This is a console app written in C# that allows the user to input the amount of loafs of bread they will purchase, as well as the amount of pastries they will purchase.  The program will take the user's order and return the total cost.  This total cost will vary depending on the amount of bread loafs or pastries ordered, based on the deals that the bakery is offering!
 
 ## Setup/Installation Requirements
 

@@ -15,7 +15,7 @@ namespace Bakery.Tests
     [TestMethod]
     public void CalculateBreadPrice_ConvertStringToIntTallyBreadPrice_Price()
     {
-      
+
       Bread newBread = new Bread("0");
       Assert.AreEqual(0, newBread.Price);
     }

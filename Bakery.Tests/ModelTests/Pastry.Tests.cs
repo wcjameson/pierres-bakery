@@ -9,8 +9,8 @@ namespace Bakery.Tests
     [TestMethod]
     public void PastryConstructor_InstantiatesPastry_PastryObject()
     {
-    Pastry newPastry = new Pastry("3");
-    Assert.AreEqual(typeof(Pastry), newPastry.GetType());
+      Pastry newPastry = new Pastry("3");
+      Assert.AreEqual(typeof(Pastry), newPastry.GetType());
     }
     [TestMethod]
     public void CalculatePastryPrice_ConvertsStringToInteger_Integer()
@@ -25,7 +25,7 @@ namespace Bakery.Tests
       Assert.AreEqual(4, bakedPastry.Price);
     }
     [TestMethod]
-      public void CalculatePastryPrice_TallyPastryPriceIfRemainderIs0_PastryPrice()
+    public void CalculatePastryPrice_TallyPastryPriceIfRemainderIs0_PastryPrice()
     {
       Pastry anotherPastry = new Pastry("3");
       Assert.AreEqual(5, anotherPastry.Price);
@@ -42,6 +42,6 @@ namespace Bakery.Tests
       Pastry lastPastry = new Pastry("5");
       Assert.AreEqual(9, lastPastry.Price);
     }
-  
+
   }
 }
