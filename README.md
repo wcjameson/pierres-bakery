@@ -20,16 +20,16 @@ This is a console app written in C# that allows the user to input the amount of 
 * In your terminal enter the following
 * git clone https://github.com/wcjameson/pierres-bakery
 * Open the project in your terminal, navigate to the Bakery.Solution directory, and enter the following
+* dotnet restore
 * dotnet run
 * If you would like to run the test suite, in your terminal, navigate to the Bakery.Tests directory and enter the following
+* dotnet restore
 * dotnet test
 * This program runs in the terminal.
 
 ## Known Bugs
 
 * Currently no known issues
-
-## License
 
 ## License
 MIT License
