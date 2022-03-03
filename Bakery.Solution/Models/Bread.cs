@@ -29,6 +29,10 @@ namespace Bakery.Models
         int discountedLoafs = numberOfLoafs / 3;
         return (numberOfLoafs - discountedLoafs) * 5;
       }
+      else if (numberOfLoafs == 4)
+      {
+        return 15;
+      }
       else if (numberOfLoafs % 3 == 1)
       {
         return (numberOfLoafs * 5) - 10;

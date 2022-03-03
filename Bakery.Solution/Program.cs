@@ -18,6 +18,16 @@ namespace Bakery
       string numOfPastries = Console.ReadLine();
       Pastry newPastry = new Pastry(numOfPastries);
       Console.WriteLine("Your order total will be $" + (newBread.Price + newPastry.Price));
+      Console.WriteLine("Would you like to continue shopping? Y/N");
+      string answer = Console.ReadLine();
+      if (answer == "Y" || answer == "y")
+      {
+        Main();
+      }
+      else
+      {
+        Console.WriteLine("Goodbye");
+      }
     }
   }
 }
